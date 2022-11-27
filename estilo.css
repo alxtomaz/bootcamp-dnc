@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+        
+body {
+    margin: 0px;/* margem externa*/
+    padding: 0px;/* margem interna*/
+
+}
+#principal {
+    width:100%;
+    height:100px;
+    border:1px solid black; /* borda do menu*/
+    background-color: #303030; /* cor de fundo*/
+    display: flex;
+    justify-content: space-between; /* usando as o espaco inteiro Através dele, conseguimos distribuir nossos elementos dentro da nossa div, de uma maneira igualitária.*/
+    align-items: center;/*alinhamento vertiical*/
+    border-bottom: #BABABA; /*borda do menu principal*/
+}
+
+#principal div a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600; /* expessura da letra*/ 
+    font-size: 25px; /* tamanho da letra*/
+    line-height: 30px; /* propriedade especifica a altura de uma linha.*/
+    color: #FFFFFF;
+    text-decoration: none;/* sem a barra embaixo da escrita*/           
+}
+    #principal div a:hover { 
+        /* voce usa para quando passar o mouse em cima do texto ou link pra mudar de cor */
+        color: #cccc;        
+}
+#menu {
+    display: flex;
+    justify-content: space-around; /*Através dele, conseguimos distribuir nossos elementos dentro da nossa div, de uma maneira igualitária.*/
+    width: 50%; /* dividi a pagina ao meio*/
+    align-items: center;/*alinhamento vertiical*/
+}
+#principal button {
+    margin-right: 5%; /*5% da margem da direita sempre usar % pra ficar responsivo*/
+    font-family: 'Inter';
+    font-size: 20PX; /* tamanho da letra*/
+    font-weight: 600; /*expessaura da letra*/
+    color: white;
+    background-color: #0C70F2;/* cor do item*/ /**/
+    border: none; /*sem borda*/
+    width: 80px;
+    height: 40PX; /*tamanho do button*/
+    border-radius: 5%;            
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25); /*serve para fazer a fumacinha do lado do botão, horizontal,vertical,fumaça,cor e transparencia*/
+    cursor: pointer; /*colocar a maozinha no cursor quando passar em cima do botão*/
+
+}
+#principal button:hover {
+    background-color: #cccc;
+    color: #303030;
+}
